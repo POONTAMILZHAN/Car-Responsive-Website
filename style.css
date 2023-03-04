@@ -83,7 +83,14 @@ section{
     font-size: 2.5rem;
     color: var(--black);
     font-weight: bolder;
+    animation: move 2s ease-in-out;
 }
+@keyframes move{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+
 .header .logo span{
     color:var(--yellow);
     font: size 30px;;
@@ -204,6 +211,29 @@ body{
     overflow-x:hidden ;
 
 }
+.car{
+    width: 45rem;
+    height: min-content;
+    position: relative;
+}
+
+.car img{
+    size: 10rem;
+    width: 50rem;
+   
+    animation: car 8s ease-in-out;
+
+}
+@keyframes car{
+    0%{
+        transform: translateX(220%);
+    }
+    /* 100%{
+        transform: translateX(-220%);
+    } */
+}
+
+
 .home h1{
     font-size: 7.5vw;
     text-transform: uppercase;
@@ -212,6 +242,15 @@ body{
 .home img{
     width: 100%;
     margin: 1rem 0;
+}
+
+.home-parallax{
+    animation: word 2s ease-in-out;
+}
+@keyframes word{
+    0%{
+        transform: translateY(-100%);
+    }
 }
 .icons-container{
     padding-top: 5rem;
